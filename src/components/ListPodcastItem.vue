@@ -1,5 +1,5 @@
 <template lang="pug"> 
-  b-row
+  b-row.content
     b-col
     b-col: Content( :title="date" )
     b-col: Content( :title="title" )
@@ -31,3 +31,11 @@ export default {
     }
 }
 </script>
+
+<style scoped>
+.content {
+  background-color: #f8f9fa;
+  padding: 10px;
+  min-height: 10em;
+}
+</style>
