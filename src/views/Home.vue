@@ -1,8 +1,9 @@
 <template lang="pug">
   b-container(fluid): b-container
     PodItem(
-      title="Johnny rocks"
-      date="09.08.06"
+      title="Johnny rocks",
+      date="09.08.06",
+      tan=true
     )
 </template>
 

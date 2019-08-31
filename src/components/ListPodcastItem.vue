@@ -1,5 +1,5 @@
 <template lang="pug"> 
-  b-row.content
+  b-row(:class="{ content: tan }")
     b-col
     b-col: Content( :title="date" )
     b-col: Content( :title="title" )
@@ -27,9 +27,14 @@ export default {
         required: true
       },
       description: String,
-      links: Array
-    }
-}
+      links: Array,
+      tan: {
+        type: Boolean,
+        required: false,
+        default: false
+      }
+    },
+};
 </script>
 
 <style scoped>
