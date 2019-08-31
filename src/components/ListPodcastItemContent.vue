@@ -1,6 +1,6 @@
 <template lang="pug">
     div
-        h3.h6(
+        h3.h5(
             v-if=title
         ) {{title}}
         slot

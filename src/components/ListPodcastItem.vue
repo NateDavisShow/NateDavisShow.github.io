@@ -1,46 +1,54 @@
 <template lang="pug"> 
-  b-row(:class="{ content: tan }")
-    b-col
-    b-col: Content( :title="date" )
+  b-row.content(:class="{ tan: tan }")
+    b-col(cols=2): a( :href='link' ): img( :src='img' )
+    b-col(cols=1): Content( :title="date" )
+      p {{ '#' + episode }}
     b-col: Content( :title="title" )
+      p {{ description }}
     b-col: Content( title="Related Links" )
-    b-col: Content( title="Share")
+    b-col(cols=2): Content( title="Share")
 </template>
 
 <script>
 import Content from "./ListPodcastItemContent";
 export default {
-    name: "ListPodcastItem",
-    components: {
-      Content
+  name: "ListPodcastItem",
+  components: {
+    Content
+  },
+  props: {
+    link: String,
+    img: String,
+    date: {
+      type: String,
+      required: true
     },
-    props: {
-      link: String,
-      img: String,
-      date: {
-        type: String,
-        required: true
-      },
-      episode: Number,
-      title: {
-        type: String,
-        required: true
-      },
-      description: String,
-      links: Array,
-      tan: {
-        type: Boolean,
-        required: false,
-        default: false
-      }
+    episode: Number,
+    title: {
+      type: String,
+      required: true
     },
+    description: {
+      type: String,
+      required: true
+    },
+    links: Array,
+    tan: {
+      type: Boolean,
+      required: false,
+      default: false
+    }
+  }
 };
 </script>
 
 <style scoped>
 .content {
-  background-color: #f8f9fa;
   padding: 10px;
   min-height: 10em;
+}
+
+.tan {
+  background-color: #f8f9fa;
 }
 </style>
