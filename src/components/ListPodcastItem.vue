@@ -4,7 +4,7 @@
     b-col: Content( :title="date" )
     b-col: Content( :title="title" )
     b-col: Content( title="Related Links" )
-    b-col: Content( title="Share: ")
+    b-col: Content( title="Share")
 </template>
 
 <script>
