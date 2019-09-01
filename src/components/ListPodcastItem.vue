@@ -1,12 +1,13 @@
 <template lang="pug"> 
-  b-row.content(:class="{ tan: tan }")
-    b-col.flex.flex-center(cols=2): a( :href='link' ): img( :src='img' )
-    b-col(cols=1): Content( :title="date" )
+  .content(:class="{ tan: tan }").flex.flex-space 
+    Content.flex.flex-vertical-center
+      a( :href='link' ): img( :src='img' )
+    Content( :title="date" )
       p {{ '#' + episode }}
-    b-col: Content( :title="title" )
+    Content( :title="title" )
       p {{ description }}
-    b-col: Content( title="Related Links" )
-    b-col(cols=2): Content( title="Share")
+    Content( title="Related Links" )
+    Content( title="Share")
 </template>
 
 <script>
@@ -64,8 +65,12 @@ export default {
   display: flex
 }
 
-.flex-center {
+.flex-vertical-center {
   flex-direction: column;
   justify-content: center;
+}
+
+.flex-space {
+  justify-content: space-between;
 }
 </style>
