@@ -1,5 +1,5 @@
 <template lang="pug"> 
-  .content(:class="{ tan: tan }").flex.flex-space 
+  .content(:class="{ tan: tan, white: !tan }").flex.flex-space 
     Content.flex.flex-vertical-center
       a( :href='link' ).relative
         i.material-icons.overlay play_circle_outline
@@ -63,9 +63,15 @@ export default {
   background-color: #f8f9fa;
 }
 
+.white {
+  background-color: #fff;
+}
+
 .content img {
   max-width: 120px;
   max-height: 70px;
+  margin-left: 20px;
+  margin-right: 20px;
 }
 
 .flex {
