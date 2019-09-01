@@ -1,5 +1,5 @@
 <template lang="pug">
-    b-container(fluid)
+    b-container
         PodItem(
             v-for="(item, index) in items",
             :episode="item.episode",
@@ -55,7 +55,3 @@ export default {
     }
 };
 </script>
-
-<style>
-
-</style>
