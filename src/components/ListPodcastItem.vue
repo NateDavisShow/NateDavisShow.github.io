@@ -10,7 +10,12 @@
       p {{ description }}
     b-col.col-12.p-2.m-2.d-block.d-md-none
     b-col.col-6.col-md-2: Content( title="Related Links" )
-    b-col.col-6.col-md-2: Content( title="Share")
+    b-col.col-6.col-md-2: Content
+      social-sharing(url="https://google.com" inline-template)
+        div
+          network(network="facebook")
+            font-awesome-icon.share-icon.fb-blue(:icon="['fab', 'facebook']")
+
 </template>
 
 <script>
@@ -60,14 +65,6 @@ export default {
   font-size: .9rem;
 }
 
-.tan {
-  background-color: #f8f9fa;
-}
-
-.white {
-  background-color: #fff;
-}
-
 .content .img-link {
   max-width: 120px;
   max-height: 70px;
@@ -103,5 +100,21 @@ export default {
 
 .overlay:hover {
   color: #f0f1f1;
+}
+</style>
+
+<style>
+.share-icon {
+  width: 1.5em !important;
+  height: 1.5em !important;
+}
+
+.fb-blue {
+  color: #3C5A99;
+}
+
+.fb-blue:hover {
+  color: #4e71ba;
+  cursor: pointer;
 }
 </style>

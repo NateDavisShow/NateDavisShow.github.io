@@ -17,6 +17,14 @@ body {
 
 }
 
+.tan {
+    background-color: #f8f9fa;
+  }
+  
+  .white {
+    background-color: #fff;
+  }
+
 .relative {
     position: relative;
-} 
+}

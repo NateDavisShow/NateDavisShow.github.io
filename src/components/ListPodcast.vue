@@ -1,6 +1,7 @@
 <template lang="pug">
     div: PodItem(
         v-for="(item, index) in items",
+        :key="item.episode",
         :episode="item.episode",
         :link="item.link",
         :img="item.img",
