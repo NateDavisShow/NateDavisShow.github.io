@@ -26,7 +26,7 @@ export default {
                 {
                     episode: 1,
                     link: "https://www.google.com",
-                    img: "",
+                    img: "https://via.placeholder.com/120x70.png",
                     title: "Test Podcast 1",
                     description: "Test Description 1",
                     date: "09.08.16",
@@ -35,7 +35,7 @@ export default {
                 {
                     episode: 2,
                     link: "https://www.google.com",
-                    img: "",
+                    img: "https://via.placeholder.com/120x70.png",
                     title: "Test Podcast 2",
                     description: "Test Description 2",
                     date: "09.09.16",
@@ -44,7 +44,7 @@ export default {
                 {
                     episode: 3,
                     link: "https://www.google.com",
-                    img: "",
+                    img: "https://via.placeholder.com/120x70.png",
                     title: "Test Podcast 3",
                     description: "Test Description 3",
                     date: "09.08.16",
