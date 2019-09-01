@@ -1,5 +1,5 @@
 <template lang="pug">
-  b-container(fluid): PodList
+  b-container: PodList
 </template>
 
 <script>

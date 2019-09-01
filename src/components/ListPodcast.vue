@@ -1,16 +1,15 @@
 <template lang="pug">
-    b-container
-        PodItem(
-            v-for="(item, index) in items",
-            :episode="item.episode",
-            :link="item.link",
-            :img="item.img",
-            :title="item.title",
-            :description="item.description",
-            :links="item.links"
-            :date="item.date"
-            :tan="index % 2 == 0"
-        )
+    div: PodItem(
+        v-for="(item, index) in items",
+        :episode="item.episode",
+        :link="item.link",
+        :img="item.img",
+        :title="item.title",
+        :description="item.description",
+        :links="item.links"
+        :date="item.date"
+        :tan="index % 2 == 0"
+    )
 </template>
 
 <script>

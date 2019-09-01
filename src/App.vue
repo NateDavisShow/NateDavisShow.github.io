@@ -1,7 +1,7 @@
 <template lang="pug">
   #app
     TheMediaPlayer
-    TheNavBar.mb-4.pb-0
+    TheNavBar.mb-4.pb-sm-0
     router-view
 </template>
 

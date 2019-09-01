@@ -1,15 +1,16 @@
 <template lang="pug"> 
-  .content(:class="{ tan: tan, white: !tan }").flex.flex-space 
-    Content.flex.flex-vertical-center
-      a( :href='link' ).relative
+  b-row.content(:class="{ tan: tan, white: !tan }")
+    b-col.col-6.col-md-2: Content.flex.flex-vertical-center
+      a( :href='link' ).relative.img-link
         i.material-icons.overlay play_circle_outline
         img( :src='img' )
-    Content( :title="date" )
+    b-col.d-none.d-md-block.col-md-2: Content( :title="date" )
       p {{ '#' + episode }}
-    Content( :title="title" )
+    b-col.col-6.col-md-4: Content( :title="title" )
       p {{ description }}
-    Content( title="Related Links" )
-    Content( title="Share")
+    b-col.p-2.m-2.d-block.d-md-none
+    b-col.col-6.col-md-2: Content( title="Related Links" )
+    b-col.col-6.col-md-2: Content( title="Share")
 </template>
 
 <script>
@@ -67,7 +68,7 @@ export default {
   background-color: #fff;
 }
 
-.content img {
+.content .img-link {
   max-width: 120px;
   max-height: 70px;
   margin-left: 20px;
@@ -81,6 +82,7 @@ export default {
 .flex-vertical-center {
   flex-direction: column;
   justify-content: center;
+  align-items: center;
 }
 
 .flex-space {
