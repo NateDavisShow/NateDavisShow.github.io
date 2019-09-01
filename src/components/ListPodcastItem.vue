@@ -8,7 +8,7 @@
       p {{ '#' + episode }}
     b-col.col-6.col-md-4: Content( :title="title" )
       p {{ description }}
-    b-col.p-2.m-2.d-block.d-md-none
+    b-col.col-12.p-2.m-2.d-block.d-md-none
     b-col.col-6.col-md-2: Content( title="Related Links" )
     b-col.col-6.col-md-2: Content( title="Share")
 </template>
