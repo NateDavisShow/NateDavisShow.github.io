@@ -1,8 +1,8 @@
 <template lang="pug"> 
   .content(:class="{ tan: tan }").flex.flex-space 
     Content.flex.flex-vertical-center
-      a( :href='link' )
-        i.material-icons play_circle_outline
+      a( :href='link' ).relative
+        i.material-icons.overlay play_circle_outline
         img( :src='img' )
     Content( :title="date" )
       p {{ '#' + episode }}
@@ -13,7 +13,6 @@
 </template>
 
 <script>
-import "material-design-icons";
 import Content from "./ListPodcastItemContent";
 
 export default {
@@ -80,5 +79,21 @@ export default {
 
 .flex-space {
   justify-content: space-between;
+}
+
+.overlay {
+  position: absolute;
+  display: block;
+  width: 52px;
+  height: 52px;
+  top: 50%;
+  left: 50%;
+  margin: -26px 0 0 -26px;
+  font-size: 52px;
+  color: #f8f9fa;
+}
+
+.overlay:hover {
+  color: #f0f1f1;
 }
 </style>
