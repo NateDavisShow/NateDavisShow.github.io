@@ -7,13 +7,18 @@
         b-navbar-toggle(target="nav-collapse")
         b-collapse#nav-collapse(is-nav)
             b-nav.w-100(align="center" tabs) 
-                b-nav-item(ref="#home" active) Home
-                b-nav-item(ref="#contact") Contact
+                b-nav-item(to="/" :active="isActive('/')") Home
+                b-nav-item(to="/contact" :active="isActive('/contact')") Contact
 </template>
 
 <script>
 export default {
-  name: "TheNavBar"
+  name: "TheNavBar",
+  methods: {
+    isActive(path) {
+      return this.$route.fullPath === path;
+    }
+  }
 };
 </script>
 
