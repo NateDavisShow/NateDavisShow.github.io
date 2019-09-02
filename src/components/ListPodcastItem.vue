@@ -10,21 +10,18 @@
       p {{ description }}
     b-col.col-12.p-2.m-2.d-block.d-md-none
     b-col.col-6.col-md-2: Content( title="Related Links" )
-    b-col.col-6.col-md-2: Content
-      social-sharing(url="https://google.com" inline-template)
-        div
-          network(network="facebook")
-            font-awesome-icon.share-icon.fb-blue(:icon="['fab', 'facebook']")
-
+    b-col.col-6.col-md-2: Content: ListSocial( :link="link" )
 </template>
 
 <script>
 import Content from "./ListPodcastItemContent";
+import ListSocial from "./ListSocialShare";
 
 export default {
   name: "ListPodcastItem",
   components: {
-    Content
+    Content,
+    ListSocial
   },
   props: {
     link: String,
@@ -100,21 +97,5 @@ export default {
 
 .overlay:hover {
   color: #f0f1f1;
-}
-</style>
-
-<style>
-.share-icon {
-  width: 1.5em !important;
-  height: 1.5em !important;
-}
-
-.fb-blue {
-  color: #3C5A99;
-}
-
-.fb-blue:hover {
-  color: #4e71ba;
-  cursor: pointer;
 }
 </style>

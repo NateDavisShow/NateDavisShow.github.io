@@ -7,10 +7,24 @@ import "bootstrap/dist/css/bootstrap.css";
 import "bootstrap-vue/dist/bootstrap-vue.css";
 import SocialSharing from "vue-social-sharing";
 import { library } from "@fortawesome/fontawesome-svg-core";
-import { faFacebook, faLinkedin } from "@fortawesome/free-brands-svg-icons";
+import {
+  faFacebook,
+  faLinkedin,
+  faTwitter,
+  faReddit,
+  faPinterest,
+  faTelegram
+} from "@fortawesome/free-brands-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/vue-fontawesome";
 
-library.add(faFacebook, faLinkedin);
+library.add(
+  faFacebook,
+  faLinkedin,
+  faTwitter,
+  faReddit,
+  faPinterest,
+  faTelegram
+);
 
 Vue.config.productionTip = false;
 
