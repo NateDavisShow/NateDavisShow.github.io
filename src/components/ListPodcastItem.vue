@@ -59,7 +59,7 @@ export default {
 }
 
 .content p {
-  font-size: .9rem;
+  font-size: 0.9rem;
 }
 
 .content .img-link {
@@ -70,7 +70,7 @@ export default {
 }
 
 .flex {
-  display: flex
+  display: flex;
 }
 
 .flex-vertical-center {

@@ -8,9 +8,9 @@
 
 <script>
 export default {
-    name: "ListPodcastItemContent",
-    props: {
-        title: String
-    }
+  name: "ListPodcastItemContent",
+  props: {
+    title: String
+  }
 };
 </script>

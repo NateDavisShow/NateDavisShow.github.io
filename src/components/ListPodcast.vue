@@ -16,42 +16,42 @@
 <script>
 import PodItem from "./ListPodcastItem";
 export default {
-    name: "ListPodcast",
-    components: {
-        PodItem
-    },
-    data() {
-        return {
-            items: [
-                {
-                    episode: 1,
-                    link: "https://www.google.com",
-                    img: "https://via.placeholder.com/120x70.png",
-                    title: "Test Podcast 1",
-                    description: "Test Description 1",
-                    date: "09.08.16",
-                    links: []
-                },
-                {
-                    episode: 2,
-                    link: "https://www.google.com",
-                    img: "https://via.placeholder.com/120x70.png",
-                    title: "Test Podcast 2",
-                    description: "Test Description 2",
-                    date: "09.09.16",
-                    links: []
-                },
-                {
-                    episode: 3,
-                    link: "https://www.google.com",
-                    img: "https://via.placeholder.com/120x70.png",
-                    title: "Test Podcast 3",
-                    description: "Test Description 3",
-                    date: "09.08.16",
-                    links: []
-                }
-            ]
+  name: "ListPodcast",
+  components: {
+    PodItem
+  },
+  data() {
+    return {
+      items: [
+        {
+          episode: 1,
+          link: "https://www.google.com",
+          img: "https://via.placeholder.com/120x70.png",
+          title: "Test Podcast 1",
+          description: "Test Description 1",
+          date: "09.08.16",
+          links: []
+        },
+        {
+          episode: 2,
+          link: "https://www.google.com",
+          img: "https://via.placeholder.com/120x70.png",
+          title: "Test Podcast 2",
+          description: "Test Description 2",
+          date: "09.09.16",
+          links: []
+        },
+        {
+          episode: 3,
+          link: "https://www.google.com",
+          img: "https://via.placeholder.com/120x70.png",
+          title: "Test Podcast 3",
+          description: "Test Description 3",
+          date: "09.08.16",
+          links: []
         }
-    }
+      ]
+    };
+  }
 };
 </script>

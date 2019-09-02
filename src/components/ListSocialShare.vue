@@ -24,7 +24,7 @@ export default {
       required: true
     }
   }
-}
+};
 </script>
 
 <style>
@@ -34,7 +34,7 @@ export default {
 }
 
 .fb-blue {
-  color: #3C5A99;
+  color: #3c5a99;
 }
 
 .fb-blue:hover {
