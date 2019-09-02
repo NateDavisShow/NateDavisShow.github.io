@@ -1,19 +1,19 @@
 <template lang="pug">
   #app
-    TheMediaPlayer
+    TheBanner
     TheNavBar.mb-4.pb-sm-0
     router-view
 </template>
 
 <script>
 import TheNavBar from "./components/TheNavBar";
-import TheMediaPlayer from "./components/TheMediaPlayer";
+import TheBanner from "./components/TheBanner";
 
 export default {
   name: "App",
   components: {
     TheNavBar,
-    TheMediaPlayer
+    TheBanner
   }
 };
 </script>
